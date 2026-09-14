@@ -76,6 +76,9 @@ const TechCard = ({ tech, isAdded, setIsAdded }: ITechCard) => {
       case "Containers":
         return "bg-[#F0F9FF] text-[#0284C7] border-[#E0F2FE]";
 
+      case "SSR / Edge":
+        return "bg-[#F3E8FF] text-[#7C3AED] border-[#E9D5FF]";
+
       default:
         return "border-none";
     }
