@@ -11,12 +11,12 @@ const AvailableTech = ({ technologies }: IAvailableTech) => {
   const [isAdded, setIsAdded] = useState<ITechnologyCard[]>([]);
 
   return (
-    <div className="grid grid-cols-12 gap-5 mb-15">
-      <div className="col-span-9 grid grid-cols-3 gap-5">
+    <div className="grid grid-cols-1 lg:grid-cols-12 gap-5 mb-15">
+      <div className="lg:col-span-9 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
         {technologies.map((tech) => {
           return (
             <TechCard
-              key={tech.name}
+              key={tech.id}
               tech={tech}
               isAdded={isAdded}
               setIsAdded={setIsAdded}
