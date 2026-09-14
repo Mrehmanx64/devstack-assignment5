@@ -5,8 +5,8 @@ const Hero = () => {
     <div className="container mx-auto px-4">
       <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center py-8">
         <div className="lg:col-span-7">
-          <h1 className="font-extrabold text-4xl md:text-5xl lg:text-[60px] lg:leading-[60px] text-[#0F172A] font-inter tracking-tighter mb-6">
-            Build Your Ideal{" "}
+          <h1 className="font-extrabold text-4xl md:text-5xl lg:text-[60px] lg:leading-[60px] text-[#0F172A] font-inter tracking-tighter mb-6 flex flex-col">
+            <span>Build Your Ideal</span>
             <span className="bg-linear-to-r from-[#FF5722] via-[#D81B7E] to-[#7C3AED] bg-clip-text text-transparent">
               Development Stack
             </span>
@@ -16,11 +16,11 @@ const Hero = () => {
             compare them side by side, and put together the stack that fits your
             next project.
           </p>
-          <div className="font-semibold font-inter text-sm text-white flex flex-col sm:flex-row gap-4">
-            <button className="bg-linear-to-r from-[#F97316] to-[#EC4899] rounded-xl px-4 py-3 w-full sm:w-auto">
+          <div className="font-semibold font-inter text-sm text-white flex flex-row justify-center lg:justify-start gap-4">
+            <button className="bg-linear-to-r from-[#F97316] to-[#EC4899] rounded-xl px-4 py-3 flex-1 sm:flex-none sm:w-auto">
               Explore Technologies
             </button>
-            <button className="border border-[#E5E7EB] rounded-xl px-4 py-3 text-[#374151] font-normal w-full sm:w-auto">
+            <button className="border border-[#E5E7EB] rounded-xl px-4 py-3 text-[#374151] font-normal flex-1 sm:flex-none sm:w-auto">
               Learn More
             </button>
           </div>
