@@ -17,11 +17,11 @@ const Nav = () => {
         <img src={LogoText} alt="" />
 
         <ul className="hidden lg:flex gap-7 items-center font-arimo">
-          <li className="text-[#DB2777] font-semibold">Home</li>
-          <li>Technologies</li>
-          <li>Projects</li>
-          <li>About</li>
-          <li>Contact</li>
+          <li className="text-[#DB2777] font-semibold cursor-pointer">Home</li>
+          <li className="cursor-pointer hover:text-[#DB2777] transition-colors duration-300">Technologies</li>
+          <li className="cursor-pointer hover:text-[#DB2777] transition-colors duration-300">Projects</li>
+          <li className="cursor-pointer hover:text-[#DB2777] transition-colors duration-300">About</li>
+          <li className="cursor-pointer hover:text-[#DB2777] transition-colors duration-300">Contact</li>
         </ul>
 
         <div className="flex gap-5">
@@ -35,11 +35,11 @@ const Nav = () => {
       {isOpen && (
         <div className="lg:hidden absolute top-full left-0 w-full bg-white border-t border-[#F1F5F9] shadow-md">
           <ul className="flex flex-col gap-4 p-6 font-arimo">
-            <li className="text-[#DB2777] font-semibold">Home</li>
-            <li>Technologies</li>
-            <li>Projects</li>
-            <li>About</li>
-            <li>Contact</li>
+            <li className="text-[#DB2777] font-semibold cursor-pointer">Home</li>
+            <li className="cursor-pointer hover:text-[#DB2777] transition-colors duration-300">Technologies</li>
+            <li className="cursor-pointer hover:text-[#DB2777] transition-colors duration-300">Projects</li>
+            <li className="cursor-pointer hover:text-[#DB2777] transition-colors duration-300">About</li>
+            <li className="cursor-pointer hover:text-[#DB2777] transition-colors duration-300">Contact</li>
           </ul>
         </div>
       )}

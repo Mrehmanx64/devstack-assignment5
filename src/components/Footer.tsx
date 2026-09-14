@@ -12,15 +12,15 @@ const Footer = () => {
               modern software.
             </p>
             <div className="mt-6 flex items-center gap-5">
-              <button className="text-xs font-semibold text-[#475569]">
+              <button className="text-xs font-semibold text-[#475569] hover:text-[#DB2777] transition-colors duration-300">
                 GitHub
               </button>
 
-              <button className="text-xs font-semibold text-[#475569]">
+              <button className="text-xs font-semibold text-[#475569] hover:text-[#DB2777] transition-colors duration-300">
                 Twitter
               </button>
 
-              <button className="text-xs font-semibold text-[#475569]">
+              <button className="text-xs font-semibold text-[#475569] hover:text-[#DB2777] transition-colors duration-300">
                 LinkedIn
               </button>
             </div>
@@ -30,9 +30,9 @@ const Footer = () => {
             <h2 className="font-bold text-[#0F172A] uppercase mb-4">Product</h2>
 
             <ul className="space-y-3 text-xs text-[#64748B]">
-              <li>Home</li>
-              <li>Technologies</li>
-              <li>Projects</li>
+              <li className="cursor-pointer hover:text-[#DB2777] transition-colors duration-300">Home</li>
+              <li className="cursor-pointer hover:text-[#DB2777] transition-colors duration-300">Technologies</li>
+              <li className="cursor-pointer hover:text-[#DB2777] transition-colors duration-300">Projects</li>
             </ul>
           </div>
 
@@ -40,9 +40,9 @@ const Footer = () => {
             <h2 className="font-bold text-[#0F172A] uppercase mb-4">Company</h2>
 
             <ul className="space-y-3 text-xs text-[#64748B]">
-              <li>About</li>
-              <li>Contact</li>
-              <li>Careers</li>
+              <li className="cursor-pointer hover:text-[#DB2777] transition-colors duration-300">About</li>
+              <li className="cursor-pointer hover:text-[#DB2777] transition-colors duration-300">Contact</li>
+              <li className="cursor-pointer hover:text-[#DB2777] transition-colors duration-300">Careers</li>
             </ul>
           </div>
 
@@ -50,8 +50,8 @@ const Footer = () => {
             <h2 className="font-bold text-[#0F172A] uppercase mb-4">Legal</h2>
 
             <ul className="space-y-3 text-xs text-[#64748B]">
-              <li>Privacy Policy</li>
-              <li>Terms of Services</li>
+              <li className="cursor-pointer hover:text-[#DB2777] transition-colors duration-300">Privacy Policy</li>
+              <li className="cursor-pointer hover:text-[#DB2777] transition-colors duration-300">Terms of Services</li>
             </ul>
           </div>
         </div>
@@ -62,9 +62,9 @@ const Footer = () => {
           </p>
 
           <div className="flex items-center gap-6 text-xs text-[#94A3B8]">
-            <span>Privacy</span>
+            <span className="cursor-pointer hover:text-[#DB2777] transition-colors duration-300">Privacy</span>
 
-            <span>Terms</span>
+            <span className="cursor-pointer hover:text-[#DB2777] transition-colors duration-300">Terms</span>
           </div>
         </div>
       </div>
