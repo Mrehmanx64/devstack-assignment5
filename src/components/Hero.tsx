@@ -4,14 +4,14 @@ const Hero = () => {
   return (
     <div className="container mx-auto px-4">
       <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center py-8">
-        <div className="lg:col-span-7">
+        <div className="lg:col-span-7 text-center lg:text-left">
           <h1 className="font-extrabold text-4xl md:text-5xl lg:text-[60px] lg:leading-[60px] text-[#0F172A] font-inter tracking-tighter mb-6 flex flex-col">
             <span>Build Your Ideal</span>
             <span className="bg-linear-to-r from-[#FF5722] via-[#D81B7E] to-[#7C3AED] bg-clip-text text-transparent">
               Development Stack
             </span>
           </h1>
-          <p className="max-w-137 font-sans text-base md:text-lg text-[#475569] mb-10">
+          <p className="max-w-137 font-sans text-base md:text-lg text-[#475569] mb-10 mx-auto lg:mx-0">
             Explore frontend, backend, database, and tooling options,
             compare them side by side, and put together the stack that fits your
             next project.
