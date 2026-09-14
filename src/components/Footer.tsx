@@ -26,7 +26,7 @@ const Footer = () => {
             </div>
           </div>
 
-          <div>
+          <div className="hidden md:block">
             <h2 className="font-bold text-[#0F172A] uppercase mb-4">Product</h2>
 
             <ul className="space-y-3 text-xs text-[#64748B]">
@@ -36,7 +36,7 @@ const Footer = () => {
             </ul>
           </div>
 
-          <div>
+          <div className="hidden md:block">
             <h2 className="font-bold text-[#0F172A] uppercase mb-4">Company</h2>
 
             <ul className="space-y-3 text-xs text-[#64748B]">
@@ -46,7 +46,7 @@ const Footer = () => {
             </ul>
           </div>
 
-          <div>
+          <div className="hidden md:block">
             <h2 className="font-bold text-[#0F172A] uppercase mb-4">Legal</h2>
 
             <ul className="space-y-3 text-xs text-[#64748B]">
