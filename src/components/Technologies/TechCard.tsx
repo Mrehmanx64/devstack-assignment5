@@ -9,16 +9,12 @@ interface ITechCard {
 }
 
 const TechCard = ({ tech, isAdded, setIsAdded }: ITechCard) => {
-  const isSelected = isAdded.some((item) => item.name === tech.name);
+  const isSelected = isAdded.some((item) => item.id === tech.id);
   const handleAddToStack = () => {
-    if (isSelected) return;
-
-    setIsAdded([...isAdded, tech]);
-
-    if (isSelected === false) {
-      toast.success(`${tech.name} added`, {
+    if (isSelected) {
+      toast.warning(`${tech.name} is already in your stack`, {
         position: "bottom-right",
-        autoClose: 5000,
+        autoClose: 3000,
         hideProgressBar: false,
         closeOnClick: false,
         pauseOnHover: true,
@@ -27,7 +23,22 @@ const TechCard = ({ tech, isAdded, setIsAdded }: ITechCard) => {
         theme: "light",
         transition: Bounce,
       });
+      return;
     }
+
+    setIsAdded([...isAdded, tech]);
+
+    toast.success(`${tech.name} added`, {
+      position: "bottom-right",
+      autoClose: 5000,
+      hideProgressBar: false,
+      closeOnClick: false,
+      pauseOnHover: true,
+      draggable: true,
+      progress: undefined,
+      theme: "light",
+      transition: Bounce,
+    });
   };
 
   const badgeColoring = (badge: string) => {
