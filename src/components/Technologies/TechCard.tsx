@@ -82,11 +82,7 @@ const TechCard = ({ tech, isAdded, setIsAdded }: ITechCard) => {
   };
 
   return (
-    <div
-      key={tech.name}
-      className="bg-base-100 rounded-2xl border border-base-200 shadow-sm hover:shadow-md transition-all duration-300 p-5 space-y-1.5"
-    >
-      {/* Icon + Badge */}
+    <div className="bg-base-100 rounded-2xl border border-base-200 shadow-sm hover:shadow-md transition-all duration-300 p-5 space-y-1.5">
       <div className="flex items-start justify-between">
         <img src={tech.icon} alt={tech.name} className="w-10 object-contain" />
 
@@ -99,15 +95,12 @@ const TechCard = ({ tech, isAdded, setIsAdded }: ITechCard) => {
         </span>
       </div>
 
-      {/* Title */}
       <h2 className="font-bold text-[#0F172A] text-[18px]">{tech.name}</h2>
 
-      {/* Description */}
       <p className="text-xs text-[#64748B] leading-relaxed ">
         {tech.description}
       </p>
 
-      {/* Bottom Info */}
       <div className="flex items-center justify-between mt-4 text-xs">
         <span className="text-[#475569] font-medium bg-[#F1F5F9] rounded px-2 py-0.5">
           {tech.category}
@@ -120,7 +113,6 @@ const TechCard = ({ tech, isAdded, setIsAdded }: ITechCard) => {
         </span>
       </div>
 
-      {/* Button */}
       <div className="mt-4">
         <button
           onClick={handleAddToStack}
