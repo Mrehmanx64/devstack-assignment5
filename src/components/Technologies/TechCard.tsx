@@ -87,7 +87,7 @@ const TechCard = ({ tech, isAdded, setIsAdded }: ITechCard) => {
         <img src={tech.icon} alt={tech.name} className="w-10 object-contain" />
 
         <span
-          className={`inline-flex items-center px-2.5 py-1 rounded-full border text-[11.5px] font-semibold font-sans ${badgeColoring(
+          className={`inline-flex items-center px-2.5 py-1 rounded-full border text-[11.5px] font-semibold font-arimo ${badgeColoring(
             tech.badge,
           )}`}
         >

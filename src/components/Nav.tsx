@@ -16,7 +16,7 @@ const Nav = () => {
 
         <img src={LogoText} alt="" />
 
-        <ul className="hidden lg:flex gap-7 items-center font-sans">
+        <ul className="hidden lg:flex gap-7 items-center font-arimo">
           <li className="text-[#DB2777] font-semibold">Home</li>
           <li>Technologies</li>
           <li>Projects</li>
@@ -34,7 +34,7 @@ const Nav = () => {
 
       {isOpen && (
         <div className="lg:hidden absolute top-full left-0 w-full bg-white border-t border-[#F1F5F9] shadow-md">
-          <ul className="flex flex-col gap-4 p-6 font-sans">
+          <ul className="flex flex-col gap-4 p-6 font-arimo">
             <li className="text-[#DB2777] font-semibold">Home</li>
             <li>Technologies</li>
             <li>Projects</li>
