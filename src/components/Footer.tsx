@@ -3,13 +3,12 @@ import LogoText from "../assets/logo-text.png";
 const Footer = () => {
   return (
     <footer className="mt-16 mb-12 pt-16 border border-white border-t-[#F1F5F9]">
-      <div className="container mx-auto">
-        <div className="mb-14 grid grid-cols-5 gap-10">
-          <div className="col-span-2 flex flex-col gap-3">
+      <div className="container mx-auto px-4">
+        <div className="mb-14 grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-10">
+          <div className="md:col-span-2 flex flex-col gap-3">
             <img src={LogoText} alt="Dev Stack" className="w-30" />
             <p className="max-w-md text-xs leading-6 text-[#64748B]">
-              Curated tools, technologies, and resources for developers building{" "}
-              <br />
+              Curated tools, technologies, and resources for developers building
               modern software.
             </p>
             <div className="mt-6 flex items-center gap-5">
@@ -57,7 +56,7 @@ const Footer = () => {
           </div>
         </div>
 
-        <div className="flex justify-between pt-8 border border-white border-t-[#F1F5F9]">
+        <div className="flex flex-col sm:flex-row justify-between items-center gap-4 pt-8 border border-white border-t-[#F1F5F9]">
           <p className="text-xs text-[#94A3B8]">
             © 2026 Dev Stack. All rights reserved.
           </p>
