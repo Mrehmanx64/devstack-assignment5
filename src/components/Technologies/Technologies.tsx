@@ -14,8 +14,8 @@ const Technologies = ({ techPromise }: ITechnologies) => {
   
 
   return (
-    <div className="container mx-auto">
-      <div className="mb-10">
+    <div className="container mx-auto px-4">
+      <div className="mb-10 text-center lg:text-left">
         <h2 className="font-extrabold text-4xl font-inter text-[#0F172A]">
           Explore the{" "}
           <span className="bg-linear-to-r from-[#EC4899] to-[#8B5CF6] bg-clip-text text-transparent">
