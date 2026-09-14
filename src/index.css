@@ -2,6 +2,7 @@
 @theme {
   --font-arimo: "Arimo", sans-serif;
   --font-inter: "Inter", sans-serif;
+  --gradient-brand: linear-gradient(to right, #FF5722, #D81B7E, #7C3AED);
 }
 @import "tailwindcss";
 @plugin "daisyui";
